@@ -26,7 +26,7 @@ source("R/functions.R")
 :::{.column-screen}
 :::{.column-body}
 
-# Bienvenidos/as al sitio oficial del FONDECYT "Justicia de mercado y Merecimiento del bienestar social"
+# Bienvenidos/as al sitio oficial del FONDECYT Regular n°1250518
 
 Esta página web funciona como un espacio de difusión de conocimiento científico, donde se podrán encontrar los principales resultados de nuestras investigaciones, así como las últimas publicaciones y noticias relacionadas con el desarrollo del proyecto. 
 
@@ -68,7 +68,7 @@ Esta página web funciona como un espacio de difusión de conocimiento científi
 :::
 
 
-:::{.column-screen style="background-color:#B8573E;"}
+:::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
 :::{.home-column-image .col-left}
 
@@ -195,7 +195,7 @@ tags$div(class = "category-row",
 :::
 
 
-:::{.column-screen style="background-color:#B8573E;"}
+:::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
 :::{.home-column-image .col-left}
 
@@ -252,59 +252,13 @@ tags$div(class = "category-row",
 :::
 :::
 
-
-:::{.column-screen style="background-color:#ffffff;"}
-:::{.column-screen-inset}
-:::{.home-column-image .col-left}
-
-<center> <h1 class="heading-home" style="color: #222322;">Books</h1>
-
-<span style = "font-style: italic;">Long-form resources by the Science & Decision Support Team</span>
-
-</center>
-
-```{r, echo = FALSE}
-tags$div(class = "category-row",
-  
-  tags$div( 
-    class = "category-column",
-    style = "width: 100%",
-    tags$a(href = "books/index.html",
-      tags$img(
-        href = "books/index.html",
-        src = "images/vectors/book-solid.svg",
-        class = "category-image honey"
-  )),
-  tags$h4(style = "text-align:center;",
-      tags$a(
-        href = "books/index.html", "Books"))
-  
-  ))
-```
-
-:::
-
-:::{.home-column-text .col-right}
-
-<center>
-<a href="https://labs.ala.org.au/books/index.html">
-
-![](books/images/covers/cleaner-shrimp_cover.png){.home-img-transparent width=45% style="border-radius:2%;"}
-
-</a>
-</center>
-
-:::
-:::
-:::
-
 ***
 
 :::{.column-screen style="background-color:#fff;"}
 
 :::{.column-page}
 
-<center> <h1>{{< fa earth-oceania >}} We value</h1> </center>
+<center> <h1>{{< fa earth-oceania >}} Nuestros valores</h1> </center>
 
 :::
 
@@ -317,21 +271,21 @@ tags$div(class = "category-row",
 tags$div(class = "values-row",
          
 create_values_box1(
-  value = "\    Openness",
+  value = "\    Apertura",
   icon = "fas fa-book-open",
-  text = "Data are most useful when they are widely available and easy to use. We try to encourage the sharing of tools that make data from the Atlas of Living Australia more open and useful for everyone"
+  text = "Los datos son más útiles cuando están ampliamente disponibles y son fáciles de usar. Intentamos fomentar el intercambio de herramientas que hagan que los datos sean más abiertos y útiles para todos."
 ),
 
 create_values_box2(
-  value = "\    Scientific transparency",
+  value = "\    Transparencia",
   icon = "fas fa-dna",
-  text = "Transparency is necessary for reproducible science. We encourage that decisions, methods and deviations are clear and transparent in a workflow from the planning phase, to the retrieval and analysis of data, to the final output"
+  text = "La transparencia es necesaria para la ciencia actual. Animamos a que las decisiones y métodos sean claros y transparentes en un flujo de trabajo desde la fase de planificación, hasta la recuperación y el análisis de los datos, hasta la salida final."
 ),
 
 create_values_box3(
-  value = "\    Robust methods",
-  icon = "far fa-chart-bar",
-  text = "No method or analytic procedure is perfect. We value consideration for strengths and limitations of each method or analysis. This attitude helps researchers choose methods that provide robust results for their specific question"
+  value = "\    Reproducibilidad",
+  icon = "fas fa-recycle",
+  text = "La reproducibilidad es un principio fundamental de la ciencia. Nos esforzamos por compartir nuestros métodos y resultados de una manera que permita a otros reproducir nuestro trabajo, y construir sobre él para avanzar en el conocimiento científico."
 )
 
 )

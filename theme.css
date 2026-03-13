@@ -9,13 +9,13 @@
 
 
 :root {
-  --primary-orange: #E06E53;
-  --secondary-orange: #B8573E;
+  --primary-orange: #212525;
+  --secondary-orange: #ca3939;
   --main-font: 'Roboto', sans-serif;
   --subheader-font: 'Roboto', sans-serif;
   --mono-font: 'Fira Mono', monospace;
   --header-font: 'Lato' sans-serif;
-  --bs-navbar-hover-color: #E06E53;
+  --bs-navbar-hover-color: #212525;
 }
 
 /* navbar */
@@ -60,25 +60,7 @@ a.nav-link {
     color: var(--primary-orange) !important;
 }
 
-.navbar-title:hover {
-    color: var(--primary-orange) !important;
-}
 
-.navbar-title {
-  display: inline-block;
-  padding: 0;
-  content: url("./images/logos/ala-labs-logo-white.png");
-  padding-left: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 100px;
-  margin: auto;
-}
-
-.navbar-title:hover {
-  opacity:50;
-  content: url("./images/logos/ala-labs-logo-orange.png");
-}
 
 @media screen and (max-width: 952px){
   /*--    --*/
@@ -138,7 +120,7 @@ a.white {
 }
 
 a:hover {
-  color: #FFC557;
+  color: #9B2626;
 }
 
 /* ALA navbar favicon color */
@@ -224,7 +206,7 @@ a:hover {
 }
 
 .team-image-text {
-  color: #E06E53;
+  color: #9b2626;
   font-size: 14px;
   padding: 16px 28px;
 }
@@ -234,7 +216,7 @@ a:hover {
 }
 
 .name {
-  color: #B8573E !important;
+  color: #9b2626 !important;
   margin-bottom: 4px;
   line-height: 1.2;
   text-decoration: none !important;

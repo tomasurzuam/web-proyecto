@@ -1,10 +1,10 @@
 ---
-title: "About"
-subtitle: Role and membership of the ALA Science & Decision Support Team
+title: "Integrantes"
+subtitle: Roles y afiliaciones de los miembros de JUSMER
 format: 
   html: 
     include-after-body: _footer.html
-title-block-banner: "#E06E53"
+title-block-banner: "#9b2626"
 title-block-banner-color: body
 ---
 
@@ -19,54 +19,39 @@ library(htmltools)
 source("../R/functions.R")
 ```
 
+# Conoce al equipo
 
-### We are responsible for:  
-
-- Data analysis & reporting on key projects
-- R package development & maintenance
-- Outreach & engagement with the research community
-
-
-
-# Meet the team
-
-*Click on photos to view their articles and contributions*
+*Click en las fotos para ver más detalles*
 ```{r}
 #| echo: false
 tags$div(class = "row",# Create a row for 3 team-member cards
          
 create_team_card(
-  person_page = "Westgate_Martin/index.html",
-  img_src = "../images/people/martin.jpg",
-  name = "Martin Westgate",
-  text = "Team Leader"
+  person_page = "castillo_jc/index.html",
+  img_src = "../images/people/jc.png",
+  name = "Juan Carlos Castillo",
+  text = "Investigador Principal"
 ),
 create_team_card(
-  person_page = "Balasubramaniam_Shandiya/index.html",
-  img_src = "../images/people/shandiya.png",
-  name = "Shandiya Balasubramaniam",
-  text = "Data Analyst"
+  person_page = "laffert_andreas/index.html",
+  img_src = "../images/people/andreas.jpg",
+  name = "Andreas Laffert",
+  text = "Asistente de investigación"
 ),
 create_team_card(
-  person_page = "Buyan_Amanda/index.html",
-  img_src = "../images/people/amanda.jpg",
-  name = "Amanda Buyan",
-  text = "Data Analyst"
+  person_page = "urzua_tomas/index.html",
+  img_src = "../images/people/tomas.jpeg",
+  name = "Tomás Urzúa",
+  text = "Tesista"
 )
 )
 tags$div(class = "row", # Create a row for 3 team-member cards
          
 create_team_card(
-  person_page = "Kellie_Dax/index.html",
-  img_src = "../images/people/dax.jpg",
-  name = "Dax Kellie",
-  text = "Data Analyst"
-),
-create_team_card(
-  person_page = "Seers_Juliet/index.html",
-  img_src = "../images/people/juliet.jpg",
-  name = "Juliet Seers",
-  text = "Training & Outreach Coordinator"
+  person_page = "canales_rene/index.html",
+  img_src = "../images/people/rene.png",
+  name = "René Canales",
+  text = "Colaborador"
 )
 )
 ```
