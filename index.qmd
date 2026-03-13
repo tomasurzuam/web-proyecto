@@ -7,6 +7,16 @@ format:
     sidebar: false
     anchor-sections: false
     css: [theme.css, index.css]
+listing:
+- id: posts
+  contents: "posts/2026/**/*.qmd"
+  sort: date desc
+  type: grid
+  grid-columns: 3
+  image-height: 300px
+  fields: [image, title, description]
+  max-items: 6
+  categories: false
 ---
 
 ```{r}
@@ -42,7 +52,7 @@ Esta página web funciona como un espacio de difusión de conocimiento científi
 :::{.column-screen-inset}
 :::{.home-column-image .col-right}
 <a href="https://labs.ala.org.au/lens">
-![](images/homepage/lens-bubble-image.png){.home-img-lens}
+![](images/homepage/fondecyt.png){.home-img-lens}
 </a>
 
 :::
@@ -52,14 +62,14 @@ Esta página web funciona como un espacio de difusión de conocimiento científi
 <center> 
 
 <a href="https://labs.ala.org.au/lens">
-<h1 class="heading-home">ALA <img src="images/logos/lens-logo.svg" class="lens-logo"></img> Lens</h1>
+<h1 class="heading-home">JUS <img src="images/logos/jusmer-logo-vert.png" class="lens-logo"></img> MER</h1>
 </a>
 
-<span>Dive into data using a [new interactive interface](https://labs.ala.org.au/lens) for exploring ALA data. Try out new views of the ALA, designed to encourage exploration and discovery of species, data and place.</span><br>
+<span>El presente proyecto de investigación se enfoca en analizar las preferencias por justicia de mercado en Chile y su relación con criterios de merecimiento, con un enfoque comparativo internacional y a lo largo del tiempo. Las preferencias por la justicia de mercado refieren al acuerdo con que las capacidades individuales y familiares de pago permitan mayor y mejor acceso a prestaciones sociales asociadas al bienestar social, como salud, pensiones y educación. Tales preferencias se verían potenciadas en contextos institucionales caracterizados por alta comodificación y privatización de prestaciones y servicios sociales, como es el caso de Chile. Desde esta perspectiva, los mercados no son proyectos solo económicos sino también culturales, y su instalación masiva en ámbitos sociales impactaría en las actitudes y percepciones de las personas hacia esas mismas políticas, lo que se conoce como efecto de retroalimentación de políticas (policy-feedback effects).</span><br>
 
-[Designed by [Mitchell Whitelaw](https://mtchl.net/) and [Adrian Mackenzie](https://researchportalplus.anu.edu.au/en/persons/adrian-mackenzie) of the [Australian National University (ANU)](https://www.anu.edu.au/)]{style="font-face:italic;"}<br>
+<span>La principal hipótesis de este proyecto es que las preferencias por justicia de mercado se asocian con las percepciones de distintos criterios de merecimiento, las que tienen un fuerte trasfondo cultural.</span><br>
 
-<span style="font-size:.7rem; color:#a7abb4;">Images (all CC-BY-NC): Kai Squires, andrewpavlov, mikegrow, kerrbrad, Matt Campbell, Toby Esplin, darcywhittaker</span>
+Descripción del proyecto...
 
 </center>
 
@@ -70,74 +80,15 @@ Esta página web funciona como un espacio de difusión de conocimiento científi
 
 :::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
-:::{.home-column-image .col-left}
 
-<a href="https://labs.ala.org.au/posts/">
-
-![](images/homepage/home_ala-plots.png){.home-img}
-
-</a>
-
-:::
-
-:::{.home-column-text .col-right}
 
 <center> <h1 class="heading-home" style="color: #fff;">Posts</h1>
-<span style = "color: #fff; font-style: italic">How-to articles for solving scientific problems</span> 
+<span style = "color: #fff; font-style: italic">Últimas actualizaciones</span> 
 </center>
 
-
-```{r, echo = FALSE}
-tags$div(class = "category-row",
-         
-  tags$div( 
-    class = "category-column",
-    tags$a(href = "posts/index.html#category=Summaries",
-      tags$img(
-        href = "posts/index.html#category=Summaries",
-        src = "images/vectors/barplot.svg",
-        style = "color:#fff !important;",
-        class = "category-image honey-white"
-  )),
-  tags$h4(style = "text-align:center;",
-      tags$a(
-        class = "white",
-        href = "posts/index.html#category=Summaries", "Summaries"))),
-  
-  tags$div( 
-    class = "category-column",
-    tags$a(href = "posts/index.html#category=Maps",
-      tags$img(
-        href = "posts/index.html#category=Maps",
-        src = "images/vectors/Australia.svg",
-        style = "color:#fff !important;",
-        class = "category-image honey-white"
-  )),
-  tags$h4(style = "text-align:center",
-      tags$a(
-        class = "white",
-        href = "posts/index.html#category=Maps", "Maps"))),
-  
-  tags$div( 
-    class = "category-column",
-    tags$a(href = "posts/index.html#category:Trees",
-      tags$img(
-        href = "posts/index.html#category=Trees",
-        src = "images/vectors/tree.svg",
-        style = "color:#fff !important;",
-        class = "category-image honey-white"
-  )),
-  tags$h4(style = "text-align:center",
-      tags$a(
-        class = "white",
-        href = "posts/index.html#category=Trees", "Trees")))
-  
-  )
-```
-
-
-
+::: {#posts}
 :::
+
 :::
 :::
 
@@ -145,16 +96,16 @@ tags$div(class = "category-row",
 :::{.column-screen-inset}
 :::{.home-column-image .col-right}
 <a href="https://labs.ala.org.au/research/highlights/">
-![](images/homepage/home_ala-research.png){.home-img}
+![](images/homepage/citation.png){.home-img}
 </a>
 
 :::
 
 :::{.home-column-text .col-left}
 
-<center> <h1 class="heading-home">Research</h1>
+<center> <h1 class="heading-home">Citaciones</h1>
 
-<span style = "font-style: italic">Highlighting research supported by ALA data</span>
+<span style = "font-style: italic">Destacando las publicaciones relacionadas a JUSMER</span>
 
 
 </center>
@@ -185,64 +136,6 @@ tags$div(class = "category-row",
   )),
   tags$h4(style = "text-align:center;",
       tags$a(href = "research/citations/index.html", "Complete list"))
-  
-  ))
-```
-
-
-:::
-:::
-:::
-
-
-:::{.column-screen style="background-color:#9B2626;"}
-:::{.column-screen-inset}
-:::{.home-column-image .col-left}
-
-<a href="https://labs.ala.org.au/software/index.html">
-
-![](images/homepage/home_ala-software-c.png){.home-img-transparent}
-
-</a>
-
-<!-- :::{.hexBadges} -->
-
-<!-- <a href="https://labs.ala.org.au/software.html"> -->
-<!-- <img src = "https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/science-impact-testing/images/hex/galah_logo.png" class = "r1 c0"></img> -->
-<!-- </a> -->
-
-<!-- <a href="https://labs.ala.org.au/software.html"> -->
-<!-- <img src = "https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/science-impact-testing/images/hex/potions-logo.png" class = "r2 c1" style = "width:265px;"></img> -->
-<!-- </a> -->
-<!-- ::: -->
-
-:::
-
-:::{.home-column-text .col-right}
-
-<center> <h1 class="heading-home" style="color: #fff;">Software</h1>
-
-<span style = "font-style: italic; color: #fff;">Tools supported by the Science & Decision Support Team</span>
-
-</center>
-
-```{r, echo = FALSE}
-tags$div(class = "category-row",
-  
-  tags$div( 
-    class = "category-column",
-    style = "width: 100%",
-    tags$a(href = "software/index.html",
-      tags$img(
-        href = "software/index.html",
-        src = "images/vectors/hexagon-vector.svg",
-        style = "color:#fff !important;",
-        class = "category-image honey-white"
-  )),
-  tags$h4(style = "text-align:center;",
-      tags$a(
-        class = "white",
-        href = "software/index.html", "Packages"))
   
   ))
 ```

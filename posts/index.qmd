@@ -1,22 +1,22 @@
 ---
-title: "Posts"
-subtitle: "How-to articles to solve scientific problems"
+title: "Publicaciones"
 listing:
   sort-ui: true
-  sort: 
-    - "date desc"
-    - "title desc"
+  sort: "date desc"
   type: default
   date-format: medium
   categories: true
-  page-size: 9
-  fields: [image, author, title, description, date, reading-time]
-title-block-banner: "#E06E53"
+  page-size: 500
+  fields: [title, date, author, categories]
+  filter-ui: [categories, date]
+  field-links: 
+    - categories
+    - title
+title-block-banner: "#212525"
 title-block-banner-color: body
-page-layout: full
+page-layout: custom
 format: 
   html:
-    include-after-body: _footer.html 
     grid:
       sidebar-width: 250px
       body-width: 1000px

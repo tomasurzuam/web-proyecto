@@ -4,7 +4,7 @@ subtitle: Roles y afiliaciones de los miembros de JUSMER
 format: 
   html: 
     include-after-body: _footer.html
-title-block-banner: "#9b2626"
+title-block-banner: "#212525"
 title-block-banner-color: body
 ---
 

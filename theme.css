@@ -223,7 +223,7 @@ a:hover {
 }
 
 .name:hover {
-  color: #E06E53 !important;
+  color: #ca3939 !important;
   text-decoration: none !important;
 }
 
@@ -241,7 +241,7 @@ a:hover {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #B8573E;
+  background-color: #9b2626;
   text-align: center;
   cursor: pointer;
   width: 20%;
@@ -249,7 +249,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #E06E53;
+  background-color: #ce3636;
 }
 /* ----------------------------------*/
 
@@ -257,17 +257,17 @@ a:hover {
 /* ----------- PEOPLE PAGES -----------*/
 
 .article-link:hover {
-  color: #E06E53;
+  color: #ca3939;
   text-decoration: none;
   transition: background-size .4s ease;
   border-bottom: 1px solid
 }
 
 .article-link:hover::after {
-  border-color: #E06E53;
+  border-color: #ca3939;
   right: 0;
   border-radius: 1em;
-  border-top: .1em solid #E06E53;
+  border-top: .1em solid #ca3939;
   content: "";
   transition: right .4s cubic-bezier(0,.5,0,1),
               border-color .4s ease-out;
@@ -287,7 +287,7 @@ a:hover {
   display: inline-block;
   padding: 10px;
   color: white;
-  background-color: #B8573E;
+  background-color: #9b2626;
   text-align: center;
   cursor: pointer;
   clip-path: circle();
@@ -296,7 +296,7 @@ a:hover {
 }
 
 .button-2:hover {
-  background-color: #E06E53;
+  background-color: #da3a3a;
 }
 
 .bio-row {
@@ -380,7 +380,7 @@ a:hover {
     background-color: white;
     border-style: solid;
     border-radius: 30px;
-    border-color: #E06E53;
+    border-color: #ca3939;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     text-decoration: none;

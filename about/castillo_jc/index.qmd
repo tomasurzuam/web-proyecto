@@ -1,5 +1,5 @@
 ---
-title: "Martin Westgate"
+title: "Juan Carlos Castillo"
 ---
 
 ```{r, include=FALSE}
@@ -15,7 +15,7 @@ source(here("R", "functions.R"))
 
 ```{r out.width='275px', out.extra='style="display:block; margin-left:auto; margin-right:auto; clip-path: circle();"'}
 #| echo: false
-knitr::include_graphics("https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/people/martin.jpg")
+knitr::include_graphics("https://raw.githubusercontent.com/tomasurzuam/web-proyecto/main/images/people/jc.png")
 ```
 :::
 

@@ -1,0 +1,88 @@
+---
+title: "Nueva publicación en Frontiers of Sociology"
+subtitle: "Justification trajectories for pension inequality in Chile (2016–2023): the role of social class and beliefs in meritocracy"
+description: |
+  
+authors:
+  - name: "Juan Carlos Castillo"
+  - name: "René Canales"
+  - name: "Andreas Laffert"
+  - name: "Tomás Urzúa"
+date: "2025-08-26"
+title-block-banner: "#212525"
+toc: true
+toc-location: left
+toc-depth: 2
+categories:
+  - Stratification
+  - Social Class
+  - Meritocracy
+  - Longitudinal Analysis
+  - Chile
+image: frontiers.png
+freeze: true
+engine: knitr
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+library(htmltools)
+```
+
+<!-- remove metadata section -->
+<style>
+  #title-block-header.quarto-title-block.default .quarto-title-meta {
+      display: none;
+  }
+</style>
+
+
+
+<!-- Author card -->
+
+:::{.author-card}
+:::{.author-card-text}
+
+#### Author
+[Juan Carlos Castillo](https://labs.ala.org.au/people/Buyan_Amanda/index.html)  
+[René Canales](https://labs.ala.org.au/people/Kellie_Dax/index.html)  
+[Andreas Laffert](https://labs.ala.org.au/people/Laffert_Andreas/index.html)  
+[Tomás Urzúa](https://labs.ala.org.au/people/Urzúa_Tomás/index.html)  
+
+#### Date
+13 March 2026
+
+:::
+
+:::{.author-card-image}
+```{r, out.width='120px', out.extra='style="clip-path: circle();"', echo=FALSE}
+knitr::include_graphics("https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/people/amanda.jpg")
+```
+:::
+
+:::{.author-card-image}
+```{r, out.width='120px', out.extra='style="clip-path: circle();"', echo=FALSE}
+knitr::include_graphics("https://raw.githubusercontent.com/AtlasOfLivingAustralia/ala-labs/main/images/people/dax.jpg")
+```
+:::
+
+:::
+
+<!------------------------ Post starts here ------------------------>
+
+::: {.callout-note title="TIP"}
+
+DOI:  [doi.org/10.3389/fsoc.2026.1771856](https://doi.org/10.3389/fsoc.2026.1771856).
+
+:::
+
+Introduction: The Chilean pension system, characterized by full privatization and individual capitalization, plays a central role in shaping old-age inequality. Despite widespread social unrest and demands for reform, a segment of the population continues to justify income-based pension differences, a phenomenon conceptualized as preferences for pension market justice. This study investigates the interplay between social class, meritocratic beliefs (distinguishing between effort and talent), and preferences for market justice in the Chilean pension system between 2016 and 2023.
+
+Methods: Using six waves of panel data from the Chilean Longitudinal Social Survey-ELSOC (Nobservations = 5,755; Nindividuals = 1,027), the analysis employs Cumulative Link Mixed Models (CLMM) to examine longitudinal changes. This approach allows for the decomposition of variance into between-person and within-person effects, assessing how stable class positions and evolving meritocratic perceptions influence the legitimacy of market-based pension allocation.
+
+Results: The findings reveal a “class neutralization” phenomenon, where objective social class does not significantly predict support for pension market justice. Instead, support has grown across all groups. Meritocratic perceptions of effort are consistently associated with higher market justice preferences at both between- and within-person levels. Conversely, talent-based perceptions do not show a main effect but interact significantly with Specific Class Positions: they predict higher support among the intermediate class (between-person) and among unemployed individuals whose perceptions of talent rewards increase over time (within-person).
+
+Discussion: These findings suggest that the institutional architecture of the pension system frames outcomes as results of individual responsibility, dampening class-based redistributive demands. Effort-based meritocracy acts as a key legitimizing ideology for pension inequality. However, talent-based justifications appear to function differently, serving as a compensatory narrative for the intermediate class and the unemployed to rationalize distributive outcomes in a context where the link between effort and reward is structurally constrained.
