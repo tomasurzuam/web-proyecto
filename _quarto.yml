@@ -34,7 +34,7 @@ website:
         text: "Presentaciones"
       - href: index.qmd#publicacionesh1
         text: "Publicaciones"
-      - href: equipo/index.qmd
+      - href: index.qmd/equipo#1
         text: "Equipo"
         menu:
         - href: research/citations/index.qmd
