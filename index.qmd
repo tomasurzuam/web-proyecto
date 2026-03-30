@@ -18,10 +18,10 @@ listing:
   max-items: 6
   categories: false
   
-- id: presentaciones
-  contents: "presentaciones/20/**/*.qmd"
+- id: presentations
+  contents: "references/presentations/posts/*.qmd"
   sort: date desc
-  type: grid
+  type: default
   grid-columns: 3
   image-height: 300px
   fields: [image, title, description]
@@ -111,14 +111,14 @@ source("R/functions.R")
 :::{.column-screen style="background-color:#fff;"}
 :::{.column-screen-inset}
 
-:::{#presentacionesh1}
+:::{#presentationsh1}
 :::
 
 
 <center> <h1 class="heading-home" style="color: #212525;">Presentaciones</h1>
 </center>
 
-::: {#presentaciones}
+::: {#presentations}
 :::
 
 ::: {.btn-container}

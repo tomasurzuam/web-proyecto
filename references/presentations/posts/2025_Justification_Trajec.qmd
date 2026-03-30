@@ -1,0 +1,23 @@
+---
+title : "Justification Trajectories for Pension Inequality in Chile (2016-2023): The Role of Social Class and Beliefs in Meritocracy"
+date : "2025-01-01"
+author : "Castillo, Juan Carlos; Canales, Rene; Laffert, Andreas & Urzua, Tomas"
+categories : ["Presentation"]
+publication : " 2do Simposio Preferencias Sociales y Desigualdades "
+publication_short : " 2do Simposio Preferencias Sociales y Desigualdades "
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Canales, Rene; Laffert, Andreas & Urzua, Tomas (2025). *Justification Trajectories for Pension Inequality in Chile (2016-2023): The Role of Social Class and Beliefs in Meritocracy*.  2do Simposio Preferencias Sociales y Desigualdades 
+
+:::
+

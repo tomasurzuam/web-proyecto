@@ -1,11 +1,50 @@
 [
   {
+    "listing": "/references/thesis/index.html",
+    "items": [
+      "/references/thesis/posts/2019_Inégalité_Subjective.html"
+    ]
+  },
+  {
+    "listing": "/references/presentations/index.html",
+    "items": [
+      "/references/presentations/posts/2026_Design_of_a_Conjoint.html",
+      "/references/presentations/posts/2026_Justification_Trajec.html",
+      "/references/presentations/posts/2026_Stability_and_Compar.html",
+      "/references/presentations/posts/2025_Justification_Trajec.html",
+      "/references/presentations/posts/2025_Stability_and_Compar.html",
+      "/references/presentations/posts/2024_Stability_and_Compar.html",
+      "/references/presentations/posts/2023_Perceptions_and_Pref.html",
+      "/references/presentations/posts/2021_Socialización_de_La_.html"
+    ]
+  },
+  {
+    "listing": "/gallery/index.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/noticias/2026/2026-03-13_paper-frontiers/index.html",
-      "/presentaciones/20/2025-11-27_social-lab/index.html",
-      "/presentaciones/20/2025-10-22_coes/index.html",
-      "/presentaciones/20/2025-09-26_udp/index.html"
+      "/references/presentations/posts/2026_Design_of_a_Conjoint.html",
+      "/references/presentations/posts/2026_Justification_Trajec.html",
+      "/references/presentations/posts/2026_Stability_and_Compar.html",
+      "/references/presentations/posts/2025_Justification_Trajec.html",
+      "/references/presentations/posts/2025_Stability_and_Compar.html",
+      "/references/presentations/posts/2024_Stability_and_Compar.html",
+      "/references/presentations/posts/2023_Perceptions_and_Pref.html",
+      "/references/presentations/posts/2021_Socialización_de_La_.html"
+    ]
+  },
+  {
+    "listing": "/references/publications/index.html",
+    "items": [
+      "/references/publications/posts/2026_Justification_Trajec.html",
+      "/references/publications/posts/2026_Stability_and_Compar.html",
+      "/references/publications/posts/2025_Changes_in_the_Justi.html",
+      "/references/publications/posts/2025_Perceptions_of_Inequ.html",
+      "/references/publications/posts/2024_The_Socialization_of.html",
+      "/references/publications/posts/2023_A_Multidimensional_A.html"
     ]
   }
 ]

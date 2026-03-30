@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   render:
     - "*.qmd"
     - "!archive/"
@@ -30,7 +31,7 @@ website:
         text: "Proyecto"
       - href: index.qmd#noticiash1
         text: "Noticias"
-      - href: index.qmd#presentacionesh1
+      - href: index.qmd#presentationsh1
         text: "Presentaciones"
       - href: index.qmd#publicacionesh1
         text: "Publicaciones"

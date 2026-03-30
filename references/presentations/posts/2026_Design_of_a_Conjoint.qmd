@@ -1,0 +1,23 @@
+---
+title : "Design of a Conjoint Survey Experiment: Inequality and Deservingness in Higher Education in Chile"
+date : "2026-01-01"
+author : "Castillo, Juan Carlos; Laffert, Andreas & Canales-Selles, Rene"
+categories : ["Presentation"]
+publication : " Workshop on Experimental Approaches to Redistribution and Deservingness . Chile"
+publication_short : " Workshop on Experimental Approaches to Redistribution and Deservingness . Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Laffert, Andreas & Canales-Selles, Rene (2026). *Design of a Conjoint Survey Experiment: Inequality and Deservingness in Higher Education in Chile*.  Workshop on Experimental Approaches to Redistribution and Deservingness . Chile
+
+:::
+

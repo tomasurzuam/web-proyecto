@@ -1,0 +1,23 @@
+---
+title : "Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts"
+date : "2025-01-01"
+author : "Laffert, Andreas; Castillo, Juan Carlos; Canales-Selles, Rene; Urzua, Tomas & Carrasco, Kevin"
+categories : ["Presentation"]
+publication : " VII Seminario Internacional DEMOSAL . Rio De Janeiro"
+publication_short : " VII Seminario Internacional DEMOSAL . Rio De Janeiro"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Laffert, Andreas; Castillo, Juan Carlos; Canales-Selles, Rene; Urzua, Tomas & Carrasco, Kevin (2025). *Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts*.  VII Seminario Internacional DEMOSAL . Rio De Janeiro
+
+:::
+

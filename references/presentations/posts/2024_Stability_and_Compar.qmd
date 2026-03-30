@@ -1,0 +1,23 @@
+---
+title : "Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts"
+date : "2024-01-01"
+author : "Castillo, Juan Carlos; Laffert, Andreas; Carrasco, Kevin; Zavala, Benjamin & Diaz, Jesus"
+categories : ["Presentation"]
+publication : " XI International Conference COES . Chile"
+publication_short : " XI International Conference COES . Chile"
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Laffert, Andreas; Carrasco, Kevin; Zavala, Benjamin & Diaz, Jesus (2024). *Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts*.  XI International Conference COES . Chile
+
+:::
+
