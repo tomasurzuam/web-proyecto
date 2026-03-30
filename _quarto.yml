@@ -6,7 +6,7 @@ project:
 
 website:
   title: "JUSMER"
-  description: "Demo projects, experiments, debugging data and so on from the [Atlas of Living Australia (ALA)](https://ala.org.au/)"
+  description: "Justicia de mercado y Merecimiento del bienestar social"
   open-graph:
     image: twitter-card-preview_frog-small.png
     image-alt: "A Southern Brown Tree Frog with the ALA Labs logo"
