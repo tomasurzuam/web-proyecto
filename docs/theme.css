@@ -22,13 +22,13 @@
 
 @media screen and (max-width: 952px){
   /*--    --*/
-  .navbar-brand.navbar-brand-logo {
+  /* .navbar-brand.navbar-brand-logo {
     background-attachment: scroll;
     content: url("./images/logos/ALA_Logo_Mark-only.png");
     height: 50px;
     margin-top: -13px;
     margin-right: -5px;
-  }
+  } */
 
 }
 
@@ -42,8 +42,8 @@
 }
 
 .navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.5rem;
 }
 
 a.nav-link,
@@ -61,14 +61,16 @@ a.nav-link {
 }
 
 
-
+/* 
 @media screen and (max-width: 952px){
-  /*--    --*/
+  /*--    
   .navbar-title {
-    content: url("./images/logos/ala-labs-logo-orange.png");
+    content: url("./images/logos/jusmer-logo-vert.png");
   }
+*/ 
+} 
 
-}
+
 
 .navbar-nav .nav-link.active {
   color: var(--primary-orange) !important;

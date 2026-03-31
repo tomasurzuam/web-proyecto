@@ -2,30 +2,45 @@
 toc: false
 format: 
   html: 
-    include-in-header: hero-image.html
+#    include-in-header: hero-image.html
     include-after-body: _footer.html
     sidebar: false
+    title-block: false
     anchor-sections: false
     css: [theme.css, index.css]
 listing:
-- id: noticias
-  contents: "noticias/2026/**/*.qmd"
+# - id: noticias
+#   contents: "noticias/2026/**/*.qmd"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 3
+#   image-height: 300px
+#   fields: [image, title, description]
+#   max-items: 6
+#   categories: false
+
+- id: publications
+  contents: "references/publications/posts/*.qmd"
   sort: date desc
-  type: grid
-  grid-columns: 3
-  image-height: 300px
-  fields: [image, title, description]
-  max-items: 6
+  type: table
+  grid-columns: 2
+  image-height: 100px
+  fields: [title, author, description, publication]
+  field-display-names:
+    title: "Title"
+    author: "Authors"
+    description: "Descripcion"
+  max-items: 4
   categories: false
-  
+
 - id: presentations
   contents: "references/presentations/posts/*.qmd"
   sort: date desc
-  type: default
-  grid-columns: 3
+  type: table
+  grid-columns: 2
   image-height: 300px
-  fields: [image, title, description]
-  max-items: 6
+  fields: [author,title]
+  max-items: 4
   categories: false
 ---
 
@@ -43,50 +58,44 @@ library(htmltools)
 source("R/functions.R")
 ```
 
-:::{.column-screen}
-:::{.column-body}
 
-<h1 style="text-align: center;">Acerca de</h1>
-
-:::
-:::
-
-***
-
-
-:::{.column-screen}
+:::{.column-screen style="background-image: linear-gradient(rgba(255,255,255,0.82), rgba(120, 98, 98, 0.82)), url('images/multitud.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"}
 :::{.column-screen-inset}
-:::{.home-column-image .col-right}
-<a href="https://labs.ala.org.au/lens">
-![](images/logos/jusmer-cuad-blanco.png){width="85%"}
+
+:::{.home-column-image .col-left}
+
+<br>
+<div style="text-align: center;">
+<a href="https://jus-mer.github.io/web-proyecto/docs/">
+![](images/logos/jusmer-cuad-blanco.png){width="150%"}
 </a>
+</div>
+
 
 :::
 
-:::{.home-column-text .col-left}
+:::{.home-column-text .col-right}
+
+# Justicia de Mercado y Merecimiento del Bienestar Social 
+
+:::
+
+:::
 
 <center> 
 
-<span>El presente proyecto de investigación se enfoca en analizar las preferencias por justicia de mercado en Chile y su relación con criterios de merecimiento.</span><br>
-
-<span>La principal hipótesis de este proyecto es que las preferencias por justicia de mercado se asocian con las percepciones de distintos criterios de merecimiento, las que tienen un fuerte trasfondo cultural.</span><br>
+### JUSMER es un proyecto FONDECYT Regular (2025-2028) cuyo objetivo es estudiar las preferencias por justicia de mercado en Chile y su relación con distintos criterios de merecimiento. La justicia de mercado se refiere a una forma de distribución de bienes sociales (como salud, educación y pensiones) de acuerdo a la capacidad de pago. La principal hipótesis de este proyecto es que estas preferencias se asocian con el apoyo a algunos criterios de merecimiento (ej: el control del logro individual) por sobre otros (ej: las necesidades asociadas a factores estructurales). 
+<br>
 
 </center>
 
-
-
-:::
-:::
-
 ::: {.btn-container}
-[Sobre el proyecto](software/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+[Sobre el proyecto](software/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #9d3636; margin-top: 0em;"}
+:::
 :::
 
 
-:::
-
-
-:::{.column-screen style="background-color:#9B2626;"}
+<!-- :::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
 
 :::{#noticiash1}
@@ -105,48 +114,102 @@ source("R/functions.R")
 :::
 
 :::
+::: -->
+
+:::{.column-screen style="background-color:#fff;"}
+:::{.column-screen-inset}
+
+:::{#publicationsh1}
 :::
 
 
-:::{.column-screen style="background-color:#fff;"}
+# <span style="color: #8f2b2b;">Publicaciones</span>
+
+::: {#publications}
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll("#listing-publications .quarto-listing-table tbody tr");
+
+  rows.forEach((row) => {
+    const authorNode = row.querySelector("td:nth-child(2) .listing-author");
+    const descriptionCell = row.querySelector("td:nth-child(3)");
+    const descriptionNode = descriptionCell && (descriptionCell.querySelector(".listing-description") || descriptionCell);
+    const titleLink = row.querySelector("td:nth-child(1) a");
+    const publicationNode = row.querySelector("td:nth-child(4)");
+    const dateSort = row.getAttribute("data-listing-date-sort");
+
+    if (titleLink && publicationNode) {
+      let journal = publicationNode.textContent.trim();
+      journal = journal
+        .replace(/\s*\[https?:\/\/[^\]]+\]\(https?:\/\/[^\)]+\)\s*/g, "")
+        .replace(/\s*https?:\/\/\S+\s*/g, "")
+        .trim();
+
+      journal = journal.split(",")[0].trim();
+
+      if (journal && !/\s\u2014\s/.test(titleLink.textContent)) {
+        titleLink.textContent = titleLink.textContent.trim() + " \u2014 " + journal;
+      }
+    }
+
+    if (authorNode && dateSort) {
+      const year = new Date(Number(dateSort)).getUTCFullYear();
+      if (Number.isFinite(year) && !/\(\d{4}\)\s*$/.test(authorNode.textContent.trim())) {
+        authorNode.textContent = authorNode.textContent.trim() + " (" + year + ")";
+      }
+    }
+
+    if (!descriptionNode || !titleLink) return;
+    if (descriptionCell.querySelector("a.pub-read-more")) return;
+
+    const words = descriptionNode.textContent.trim().split(/\s+/).filter(Boolean);
+    if (words.length > 50) {
+      descriptionNode.textContent = words.slice(0, 80).join(" ") + "...";
+    }
+
+    const readMoreLink = document.createElement("a");
+    readMoreLink.href = titleLink.getAttribute("href");
+    readMoreLink.className = "pub-read-more";
+    readMoreLink.textContent = "keep reading";
+
+    descriptionCell.appendChild(document.createTextNode(" "));
+    descriptionCell.appendChild(readMoreLink);
+  });
+});
+</script>
+
+::: {.btn-container}
+[Más publicaciones](noticias/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+:::
+
+:::
+:::
+
+
+
+:::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
 
 :::{#presentationsh1}
 :::
 
 
-<center> <h1 class="heading-home" style="color: #212525;">Presentaciones</h1>
-</center>
+# <span style="color: #fff;">Presentaciones</span>
+
+<br>
 
 ::: {#presentations}
 :::
 
 ::: {.btn-container}
-[Presentaciones anteriores](presentaciones/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+[Más presentaciones](presentaciones/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
 :::
 
 :::
 :::
 
-:::{.column-screen style="background-color:#9b2626;"}
-:::{.column-screen-inset}
-
-:::{#publicacionesh1}
-:::
-
-
-<center> <h1 class="heading-home" style="color: #fff;">Publicaciones</h1>
-</center>
-
-::: {#publicaciones}
-:::
-
-::: {.btn-container}
-[Todas las publicaciones](noticias/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
-:::
-
-:::
-:::
 
 
 :::{.column-screen style="background-color:#fff;"}
@@ -155,12 +218,12 @@ source("R/functions.R")
 :::{#equipoh1}
 :::
 
-<center> <h1>{{< fa circle-user >}} Equipo</h1> </center>
+# Equipo
 
 ```{r}
 #| echo: false
-tags$div(class = "row", # Create a row for 3 team-member cards
-         
+tags$div(class = "row team-grid-4",
+
 create_team_card(
   person_page = "https://jc-castillo.com/",
   img_src = "images/people/jc.png",
@@ -168,6 +231,7 @@ create_team_card(
   text = "Investigador Principal"
 ),
 create_team_card(
+  
   person_page = "https://andreas-lafferte.github.io/alaffert-website/",
   img_src = "images/people/andreas.jpg",
   name = "Andreas Laffert",
@@ -178,10 +242,7 @@ create_team_card(
   img_src = "images/people/tomas.jpg",
   name = "Tomás Urzúa",
   text = "Tesista"
-)
-)
-tags$div(class = "row", # Create a row for 3 team-member cards
-         
+),
 create_team_card(
   person_page = "https://renejcanales.github.io/renecanales-website/",
   img_src = "images/people/rene.jpg",

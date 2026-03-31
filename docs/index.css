@@ -87,8 +87,8 @@
 @media screen and (max-width: 952px){
   /*--    --*/
   .hero-container {
-    max-height: 75vh;
-    /*height: 66vh;*/
+    max-height: 40vh;
+    height: 40vh;
     display: flex;
   }
   .hero-image {
@@ -99,7 +99,10 @@
     padding: none;
     align-content: center;
     object-fit: cover;
-    padding: 6vh 0;
+    padding: 3vh 0;
+  }
+  .hero-logo {
+    width: 160px;
   }
 
 }
@@ -418,4 +421,184 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+/* Homepage only: remove Quarto's injected title block and top spacer under navbar */
+#title-block-header {
+  display: none !important;
+}
+
+#quarto-content > * {
+  padding-top: 0 !important;
+}
+
+main#quarto-document-content {
+  margin-top: 0 !important;
+}
+
+/* Defensive rule: hide stale injected hero block if Quarto cache adds it */
+body > .hero-container {
+  display: none !important;
+}
+
+/* Publications listing: first row Author | Title, second row Description */
+#listing-publications .quarto-listing-table thead th:nth-child(3) {
+  display: none;
+}
+
+#listing-publications .quarto-listing-table thead th:nth-child(4),
+#listing-publications .quarto-listing-table tbody td:nth-child(4) {
+  display: none;
+}
+
+#listing-publications .quarto-listing-table thead tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#listing-publications .quarto-listing-table thead th:nth-child(1) {
+  order: 2;
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+  padding-left: 1.1rem;
+}
+
+#listing-publications .quarto-listing-table thead th:nth-child(2) {
+  order: 1;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding-right: 1.1rem;
+}
+
+#listing-publications .quarto-listing-table tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.1rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+#listing-publications .quarto-listing-table tbody td {
+  display: block;
+  vertical-align: top;
+  border: 0;
+  padding: 0 0.5rem 0 0;
+}
+
+#listing-publications .quarto-listing-table tbody td:nth-child(1) {
+  order: 2;
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+  padding-left: 1.1rem;
+}
+
+#listing-publications .quarto-listing-table tbody td:nth-child(2) {
+  order: 1;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding-right: 1.1rem;
+}
+
+#listing-publications .quarto-listing-table tbody td:nth-child(3) {
+  order: 3;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 0.35rem;
+  opacity: 0.95;
+}
+
+#listing-publications .quarto-listing-table tbody td:nth-child(3)::before {
+  content: "Abstract: ";
+  font-weight: 700;
+}
+
+#listing-publications .pub-read-more {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#listing-publications .listing-title {
+  font-weight: 600;
+}
+
+#listing-publications .listing-author {
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  #listing-publications .quarto-listing-table tbody td:nth-child(1),
+  #listing-publications .quarto-listing-table tbody td:nth-child(2),
+  #listing-publications .quarto-listing-table tbody td:nth-child(3),
+  #listing-publications .quarto-listing-table tbody td:nth-child(4) {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Grey separator between presentation items */
+#listing-presentations .quarto-post + .quarto-post {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+}
+
+/* Equipo: 2x2 grid, equal-size cards */
+.team-grid-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+.team-grid-4 .card-column {
+  float: none;
+  width: calc(50% - 1rem);
+  flex: 0 0 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+  padding: 0;
+  margin-bottom: 0;
+}
+.team-grid-4 .team-card {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.team-grid-4 .team-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+@media screen and (max-width: 767.98px) {
+  .team-grid-4 .card-column {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Presentations block: white text on navbar-red background */
+#listing-presentations .quarto-listing-table {
+  background: transparent;
+}
+#listing-presentations .quarto-listing-table thead th,
+#listing-presentations .quarto-listing-table thead th a {
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+#listing-presentations .quarto-listing-table tbody tr {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+#listing-presentations .quarto-listing-table tbody td {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+#listing-presentations .listing-title a,
+#listing-presentations .listing-title {
+  color: #fff !important;
+}
+#listing-presentations .listing-author {
+  color: rgba(255, 255, 255, 0.85);
 }
