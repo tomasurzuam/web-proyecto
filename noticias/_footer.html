@@ -1,12 +1,17 @@
 <style>
 .footer-full {
-  width: 100vw;                /* ocupa todo el ancho de la pantalla */
-  margin-left: calc(-50vw + 50%); /* rompe el centrado del contenedor */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   background-color: #212525;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .footer-full a {
